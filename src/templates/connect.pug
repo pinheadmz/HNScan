@@ -1,3 +1,18 @@
 extends layouts/layout
 
 block content
+  .contentContainer
+    .card
+      header.card-header
+        p.card-header-title Connecting to Our Node
+      .card-content
+        .columns
+          .column.is-half
+            | HNScan runs its own full node alongside serving this website. With this node always active, it
+            | can be a reliable way to resync with the network in the event that you have trouble getting your
+            | own node connected to peers.
+          .column.is-half
+            p 1. Do this:
+            p 2. Then this:
+            p 3. Don't forget this:
+            p 4. And finally, this:

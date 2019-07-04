@@ -125,6 +125,13 @@ var routes = [
   },
   {
     method: "GET",
+    path: "/connect",
+    handler: function(request, h) {
+      return h.view("connect.pug", {});
+    }
+  },
+  {
+    method: "GET",
     path: "/tx/{hash}",
     handler: txHandler,
     options: {
